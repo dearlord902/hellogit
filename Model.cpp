@@ -1,27 +1,19 @@
 #include "Model.h"
-#include <isostream>
-	int main()
-{
-	Vector <Model> V;
-	Model form;
-	form.set part1(1);
-	form.set part2(0.5);
-	V.push_back(form);
-	form.set part1(2);
-	form.set part2(1.5);
-	V.push_back(form);
-	form.set part1(3);
-	form.set part2(2.5);
-	V.push_back(form);
-	form.set part1(4);
-	form.set part2(3.5);
-	V.push_back(form);
-	cout<<V.size()<<endl
 
-for (int i=0; i<V.size(),i++)
+void Model::set part1 (int p)
 	{
-	cout << V[i].get part1()<<"  "
-	     << V[i].get part2()<<endlp;
+		part1 = p;
 	}
-	return 0;
-}
+int Model::get part1 ()
+	{	
+		return part1;
+	}
+void Model::set part2 (float q)
+	{
+		part2 = q;
+	}
+float Model::get part2 (float q)
+	{
+		return part2;
+	}
+
