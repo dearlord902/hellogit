@@ -18,4 +18,8 @@ string Help::getOrgan ()
 	{
 		return Organ;
 	}
-
+Help::Help(int n, string o)
+{
+	Num = n;
+	Organ = o ;
+}

@@ -7,8 +7,8 @@ using namespace std;
 class Help
 	{
 	private:
-		int Num = 0;
-		string Organ = " ";
+		int Num;
+		string Organ;
 	public:
 		Help(int n, string o);
 		void setNum (int n);
